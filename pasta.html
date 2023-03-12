@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Hiiiiii</title>
+<style>
+p {
+text-align: center;
+font-size: 27px;
+font-family: Georgia;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 45%;
+}
+</style>
+</head>
+<body>
+<p>You, me, La rosa, any day you want</p>
+<img src="https://media.tenor.com/4pmzVUanKEAAAAAC/cat-spaghetti.gif">
+</body>
+<title>Botões</title>
+<style>
+#botao1 {
+position: fixed;
+top: 70%;
+left: 60%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+position: absolute;
+ left: 30%;
+  top: 67.5%;
+}
+</style>
+</head>
+<body>
+<button id="botao1">YESS HEHE</button>
+<button id="botao2">MEH</button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 40;
+button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 44;
+  }else{
+    left = 40;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('botao1').addEventListener('click', function() {
+alert('HAPPY EL GATO');
+});
+</script>
+<script>document.getElementById('botao2').addEventListener('click', function() {
+alert('SAD EL GATO');
+});
+</script>
+</body>
+</html>
